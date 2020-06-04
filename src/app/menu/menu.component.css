@@ -1,0 +1,16 @@
+/* .icon {
+  font-size: 22px;
+  color: #a5a3a8;
+} */
+
+.icon {
+  color: #000;
+  font-size: 24px;
+  background: #fab005;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.nav-caption {
+  margin-left: 8px;
+}

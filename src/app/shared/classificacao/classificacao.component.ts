@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-classificacao',
   templateUrl: './classificacao.component.html',
-  styleUrls: ['./classificacao.component.css']
+  styleUrls: ['./classificacao.component.css'],
 })
 export class ClassificacaoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

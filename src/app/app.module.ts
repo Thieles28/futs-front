@@ -7,19 +7,12 @@ import { MaterialModule } from '../material-modulo';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from './layout/layout.module';
 import { LayoutComponent } from './layout/layout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    FormsModule,
-    ReactiveFormsModule,
-    LayoutModule
-  ],
+  imports: [AppRoutingModule, LayoutModule, RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

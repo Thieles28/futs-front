@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TimesComponent } from '../shared/times/times.component';
 import { CampeonatoComponent } from '../shared/campeonato/campeonato.component';
 import { PaginaNaoEncontradaComponent } from '../shared/pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PaginaNaoEncontradaComponent } from '../shared/pagina-nao-encontrada/pa
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
+    HttpClientModule,
   ],
   exports: [
     NavbarComponent,

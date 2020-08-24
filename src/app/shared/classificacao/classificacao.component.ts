@@ -14,6 +14,7 @@ export class ClassificacaoComponent implements OnInit {
   listaTimes: TimesModel[];
   dataSource = new MatTableDataSource<TimesModel>(this.listaTimes);
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+
   colunasExibidas: string[] = [
     'codigo',
     'nome',

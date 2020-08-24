@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'classificacao', component: ClassificacaoComponent },
   { path: 'times', component: TimesComponent },
   { path: 'campeonato', component: CampeonatoComponent },
-  // { path: '**', component: PaginaNaoEncontradaComponent },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({

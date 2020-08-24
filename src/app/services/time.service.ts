@@ -1,12 +1,12 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-import { TimesModel } from '../model/times-model';
+import { TimeModel } from '../model/time-model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ClassificacaoService {
+export class TimeService {
   private url = environment.servidor;
 
   constructor(private http: HttpClient) {}
@@ -15,12 +15,12 @@ export class ClassificacaoService {
     return this.http.get(`${this.url}/times`);
   }
 
-  cadastrarTimes(times: TimesModel) {
+  cadastrarTimes(times: TimeModel) {
     return this.http.post(`${this.url}/times`, times);
   }
 
-  atualizarTimes(times: TimesModel) {
-    return this.http.put(`${this.url}/times/${times.codigo}`, times);
+  atualizarTimes(times: TimeModel) {
+    return this.http.put(`${this.url}/times/${times.codigoTime}`, times);
   }
 
   removerTimes(codigo: number) {

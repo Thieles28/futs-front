@@ -9,7 +9,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TimesComponent } from '../shared/times/times.component';
+import { TimeComponent } from '../shared/time/time.component';
 import { CampeonatoComponent } from '../shared/campeonato/campeonato.component';
 import { PaginaNaoEncontradaComponent } from '../shared/pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     BodyComponent,
     ClassificacaoComponent,
-    TimesComponent,
+    TimeComponent,
     CampeonatoComponent,
     PaginaNaoEncontradaComponent,
   ],
@@ -39,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     BodyComponent,
     ClassificacaoComponent,
-    TimesComponent,
+    TimeComponent,
     CampeonatoComponent,
     PaginaNaoEncontradaComponent,
   ],

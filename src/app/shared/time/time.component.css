@@ -1,9 +1,12 @@
 table {
-  width: 100%;
+  width: 50%;
+}
+mat-paginator {
+  width: 50%;
 }
 
 .mat-elevation {
   margin-top: 2%;
   margin-left: 5%;
-  width: 90%;
+  width: 50%;
 }

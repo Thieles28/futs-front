@@ -11,6 +11,14 @@ export class MenuConfig {
 					translate: 'MENU.DASHBOARD',
 				},
 				{
+					title: 'Time',
+					desc: 'Lista de times',
+					root: true,
+					alignment: 'left',
+					page: '/time',
+					icon: 'flaticon-line-graph' 
+				},
+				{
 					title: 'Components',
 					root: true,
 					alignment: 'left',
@@ -386,6 +394,12 @@ export class MenuConfig {
 					page: '/dashboard',
 					translate: 'MENU.DASHBOARD',
 					bullet: 'dot',
+				},
+				{
+					title: 'Time',
+					root: true,
+					icon: 'flaticon-line-graph',
+					page: '/time',					
 				},
 				{
 					title: 'Layout Builder',

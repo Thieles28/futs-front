@@ -6,6 +6,12 @@ export class PageConfig {
 				desc: 'Latest updates and statistic charts'
 			},
 		},
+		time: { 
+            page: { 
+				title: 'Time', 
+				desc: 'Lista de time' 
+			} 
+        },
 		ngbootstrap: {
 			accordion: {
 				page: {title: 'Accordion', desc: ''}

@@ -24,6 +24,7 @@ import {
 	MatTableModule,
 	MatTabsModule,
 	MatTooltipModule,
+	MatFormFieldModule,
 } from '@angular/material';
 // NgBootstrap
 import {NgbDropdownModule, NgbTabsetModule, NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
@@ -145,11 +146,10 @@ import {CartComponent} from './layout/topbar/cart/cart.component';
 		UserProfile2Component,
 		UserProfile3Component,
 		CartComponent,
-
 		ErrorComponent,
 	],
 	imports: [
-		CommonModule,
+	CommonModule,
 		RouterModule,
 		FormsModule,
 		ReactiveFormsModule,
@@ -180,6 +180,7 @@ import {CartComponent} from './layout/topbar/cart/cart.component';
 		MatTabsModule,
 		MatTooltipModule,
 		MatDialogModule,
+		MatFormFieldModule,
 
 		// ng-bootstrap modules
 		NgbDropdownModule,

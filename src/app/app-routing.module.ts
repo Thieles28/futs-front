@@ -6,6 +6,7 @@ import { BaseComponent } from "./views/theme/base/base.component";
 import { ErrorPageComponent } from "./views/theme/content/error-page/error-page.component";
 // Auth
 import { AuthGuard } from "./core/auth";
+import { TimeComponent } from "./views/pages/time/time.component";
 
 const routes: Routes = [
 	{
@@ -25,6 +26,13 @@ const routes: Routes = [
 				loadChildren: () =>
 					import("app/views/pages/dashboard/dashboard.module").then(
 						(m) => m.DashboardModule
+					),
+			},
+			{
+				path: "time",
+				loadChildren: () =>
+					import("app/views/pages/time/time.module").then(
+						(m) => m.TimeModule
 					),
 			},
 			{

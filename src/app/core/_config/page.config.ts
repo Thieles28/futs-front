@@ -6,11 +6,17 @@ export class PageConfig {
 				desc: 'Latest updates and statistic charts'
 			},
 		},
-		time: { 
-            page: { 
-				title: 'Time', 
-				desc: 'Lista de time' 
-			} 
+		time: {
+            page: {
+				title: 'Time',
+				desc: 'Lista de time'
+			}
+		},
+		campeonato: {
+            page: {
+				title: 'Campeonato',
+				desc: 'Lista de campeonato'
+			}
         },
 		ngbootstrap: {
 			accordion: {

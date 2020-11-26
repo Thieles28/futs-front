@@ -1,4 +1,5 @@
 // Components
+import { TimeComponent } from '../../pages/time/time.component';
 export { ContextMenuComponent } from './context-menu/context-menu.component';
 export { ContextMenu2Component } from './context-menu2/context-menu2.component';
 export { QuickPanelComponent } from './quick-panel/quick-panel.component';

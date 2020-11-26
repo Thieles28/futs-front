@@ -36,6 +36,13 @@ const routes: Routes = [
 					),
 			},
 			{
+				path: "campeonato",
+				loadChildren: () =>
+					import("app/views/pages/campeonato/campeonato.module").then(
+						(m) => m.CampeonatoModule
+					),
+			},
+			{
 				path: "error/403",
 				component: ErrorPageComponent,
 				data: {

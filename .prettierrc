@@ -1,5 +1,7 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "eslintIntegration": true
+  "eslintIntegration": true,
+  "semi": true,
+  "singleQuote": true
 }

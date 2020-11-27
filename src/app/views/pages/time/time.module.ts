@@ -5,15 +5,13 @@ import { CoreModule } from '../../../core/core.module';
 import { PartialsModule } from '../../partials/partials.module';
 import { TimeComponent } from './time.component';
 // MATERIAL
-import {
-	MatFormFieldModule,
-	MatIconModule,
-	MatInputModule,
-	MatTableModule,
-	MatProgressSpinnerModule,
-	MatPaginatorModule,
-	MatSortModule,
-} from '@angular/material';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({

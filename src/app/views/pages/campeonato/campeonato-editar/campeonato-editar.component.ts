@@ -17,7 +17,7 @@ import {
   LayoutUtilsService,
   MessageType,
 } from "./../../../../../app/core/_base/crud";
-import { MatDialog } from "@angular/material";
+import { MatDialog } from "@angular/material/dialog";
 import {
   SubheaderService,
   LayoutConfigService,

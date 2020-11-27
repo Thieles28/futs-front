@@ -1,10 +1,10 @@
 // Angular
-import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GestureConfig, MatProgressSpinnerModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { OverlayModule } from '@angular/cdk/overlay';
 // Angular in memory
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -14,14 +14,12 @@ import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface } from 'ngx-p
 import { InlineSVGModule } from 'ng-inline-svg';
 // Env
 import { environment } from '../environments/environment';
-// Hammer JS
-import 'hammerjs';
 // NGX Permissions
 import { NgxPermissionsModule } from 'ngx-permissions';
 // NGRX
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, DefaultRouterStateSerializer } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 // State
 import { metaReducers, reducers } from './core/reducers';
@@ -104,7 +102,7 @@ export function hljsLanguages(): HighlightLanguage[] {
 		OverlayModule,
 		StoreModule.forRoot(reducers, {metaReducers}),
 		EffectsModule.forRoot([]),
-		StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
+		StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer,stateKey: 'router'}),
 		StoreDevtoolsModule.instrument(),
 		AuthModule.forRoot(),
 		TranslateModule.forRoot(),
@@ -125,10 +123,6 @@ export function hljsLanguages(): HighlightLanguage[] {
 		{
 			provide: PERFECT_SCROLLBAR_CONFIG,
 			useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-		},
-		{
-			provide: HAMMER_GESTURE_CONFIG,
-			useClass: GestureConfig
 		},
 		{
 			// layout config initializer

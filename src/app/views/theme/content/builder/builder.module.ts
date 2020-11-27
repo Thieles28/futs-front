@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
 // NgBootstrap
-import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 // Perfect Scrollbar
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 // Partials
@@ -18,26 +18,25 @@ import { CoreModule } from '../../../../core/core.module';
 import { BuilderComponent } from './builder.component';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		PartialsModule,
-		FormsModule,
-		MatTabsModule,
-		CoreModule,
-		PerfectScrollbarModule,
-		HighlightModule,
-		RouterModule.forChild([
-			{
-				path: '',
-				component: BuilderComponent
-			}
-		]),
+  imports: [
+    CommonModule,
+    PartialsModule,
+    FormsModule,
+    MatTabsModule,
+    CoreModule,
+    PerfectScrollbarModule,
+    HighlightModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: BuilderComponent,
+      },
+    ]),
 
-		// ng-bootstrap modules
-		NgbTabsetModule,
-	],
-	providers: [],
-	declarations: [BuilderComponent]
+    // ng-bootstrap modules
+    NgbNavModule,
+  ],
+  providers: [],
+  declarations: [BuilderComponent],
 })
-export class BuilderModule {
-}
+export class BuilderModule {}

@@ -1,7 +1,6 @@
 // Angular
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,17 +23,16 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
-// NgBootstrap
+import { RouterModule } from '@angular/router';
 import {
   NgbDropdownModule,
-  NgbNavModule,
+  NgbTabsetModule,
   NgbTooltipModule,
 } from '@ng-bootstrap/ng-bootstrap';
-// Perfect Scrollbar
+import { InlineSVGModule } from 'ng-inline-svg';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-// Core module
+
 import { CoreModule } from '../../core/core.module';
-// CRUD Partials
 import {
   ActionNotificationComponent,
   AlertComponent,
@@ -42,7 +40,10 @@ import {
   FetchEntityDialogComponent,
   UpdateStatusDialogComponent,
 } from './content/crud';
-// Layout partials
+import { ErrorComponent } from './content/general/error/error.component';
+import { NoticeComponent } from './content/general/notice/notice.component';
+import { PortletModule } from './content/general/portlet/portlet.module';
+import { WidgetModule } from './content/widgets/widget.module';
 import {
   ContextMenu2Component,
   ContextMenuComponent,
@@ -66,17 +67,17 @@ import {
   UserProfile3Component,
   UserProfileComponent,
 } from './layout';
-// General
-import { NoticeComponent } from './content/general/notice/notice.component';
-import { PortletModule } from './content/general/portlet/portlet.module';
-// Errpr
-import { ErrorComponent } from './content/general/error/error.component';
-// Extra module
-import { WidgetModule } from './content/widgets/widget.module';
-// SVG inline
-import { InlineSVGModule } from 'ng-inline-svg';
 import { CartComponent } from './layout/topbar/cart/cart.component';
 
+// NgBootstrap
+// Perfect Scrollbar
+// Core module
+// CRUD Partials
+// Layout partials
+// General
+// Errpr
+// Extra module
+// SVG inline
 @NgModule({
   declarations: [
     ScrollTopComponent,
@@ -186,7 +187,7 @@ import { CartComponent } from './layout/topbar/cart/cart.component';
 
     // ng-bootstrap modules
     NgbDropdownModule,
-    NgbNavModule,
+    NgbTabsetModule,
     NgbTooltipModule,
   ],
 })

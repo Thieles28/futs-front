@@ -1,22 +1,23 @@
 // Angular
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
-// NgBootstrap
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-// Perfect Scrollbar
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-// Partials
-import { PartialsModule } from '../../../partials/partials.module';
-// Highlight JS
+import { RouterModule } from '@angular/router';
+import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
 import { HighlightModule } from 'ngx-highlightjs';
-// CoreModule
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+
 import { CoreModule } from '../../../../core/core.module';
-// Builder component
+import { PartialsModule } from '../../../partials/partials.module';
 import { BuilderComponent } from './builder.component';
 
+// NgBootstrap
+// Perfect Scrollbar
+// Partials
+// Highlight JS
+// CoreModule
+// Builder component
 @NgModule({
   imports: [
     CommonModule,
@@ -34,7 +35,7 @@ import { BuilderComponent } from './builder.component';
     ]),
 
     // ng-bootstrap modules
-    NgbNavModule,
+    NgbTabsetModule,
   ],
   providers: [],
   declarations: [BuilderComponent],
